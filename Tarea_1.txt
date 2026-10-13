@@ -1,4 +1,3 @@
-1.-La base de datos debe impedir automáticamente los valores negativos
-2.-Las cuentas inactivas deben ser marcadas como inactivas en lugar de ser eliminadas
-3.-La base de datos debe de registrar de forma obligatoria la fecha y hora en la que  
-se modifique cualquier cuenta
+NFR1 (Consistencia Matemática): La base de datos debe impedir que las cuentas queden con saldos en números negativos.
+NFR2 (Auditoría / Soft Delete): La base de datos debe impedir la eliminación física de un registro de cliente, y en su lugar debe poder marcarse como inactivo.
+NFR3 (Timestamps): La base de datos debe registrar y actualizar automáticamente la fecha y hora exacta (updated_at) cada vez que el registro de una cuenta es modificado.
